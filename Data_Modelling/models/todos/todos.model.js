@@ -1,4 +1,4 @@
-import mongoose, { Mongoose } from "mongoose";
+import mongoose from "mongoose";
 
 const todoSchema = new mongoose.Schema(
   {
@@ -16,7 +16,7 @@ const todoSchema = new mongoose.Schema(
     },
     subTodos: [
       {
-        type: Mongoose.Schema.types.ObjectId,
+        type: mongoose.Schema.Types.ObjectId,
         ref: "SubTodo",
       },
     ],
