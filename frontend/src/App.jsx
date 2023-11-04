@@ -18,11 +18,9 @@ function App() {
       <h1>Connecting node.js backend with React.js Frontend</h1>
       <p>Jokes {jokes.length}</p>
 
-      {jokes.map((joke, index) => (
+      {jokes.map((joke) => (
         <div key={joke.id}>
-          <h3>
-            ({joke.id}):{joke.joke}
-          </h3>
+          <h3>{joke.joke}</h3>
           <p>{joke.punchline}</p>
         </div>
       ))}
